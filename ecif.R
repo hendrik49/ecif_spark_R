@@ -8,7 +8,7 @@ conf$`sparklyr.shell.driver-memory` <- "16G"
 conf$spark.memory.fraction <- 0.8 
 config <- spark_config()
 config$`sparklyr.shell.driver-class-path` <- 
-  "postgresql-9.3-1104.jdbc4.jar"
+  "lib/postgresql-9.3-1104.jdbc4.jar"
 
 sc <- spark_connect(master = "local", app_name = "ECIF SPark Engine",  config = config)
 
