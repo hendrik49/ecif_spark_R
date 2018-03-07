@@ -30,3 +30,7 @@ individualdatasteward <- spark_read_jdbc(sc, "ecif_jdbc",  options = list(
   password = "postgres",
   dbtable = "public.individualdatasteward"))
 
+
+test <- dbGetQuery(sc, "SELECT * FROM public.individualgoldendata LIMIT 10")
+test
+
